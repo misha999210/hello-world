@@ -41,3 +41,46 @@ int main() {
 	p = 2 * M_PI * r;
 	printf("\nPerimetr= %.4f\n", p);
 }
+void Fillfgs(char A[], char h[]) {
+	int k = 0;
+	while (h[k] != '(') {
+		A[k] = h[k];
+		k++;
+	}
+}
+void Fillfg(char A[], char h[], int& i) {
+	int k = 0;
+	while (h[i] != '(') {
+		A[k] = h[i];
+		k++;
+		i = i + 1;
+	}
+	i += 1;
+}
+void Fillxch(char A[], char h[], int& i) {
+	int k = 0;
+	while (h[i] != ',') {
+		A[k] = h[i];
+		k++;
+		i = i + 1;
+	}
+	i += 1;
+}
+void Fillych(char A[], char h[], int& i) {
+	int k = 0;
+	while (h[i] != ',') {
+		A[k] = h[i];
+		k++;
+		i = i + 1;
+	}
+	i += 1;
+}
+void Fillrch(char A[], char h[], int& i) {
+	int k = 0;
+	while (h[i] != ')') {
+		A[k] = h[i];
+		k++;
+		i = i + 1;
+	}
+	i += 1;
+}
